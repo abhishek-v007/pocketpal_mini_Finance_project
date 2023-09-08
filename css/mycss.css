@@ -1,0 +1,28 @@
+.icon-button {
+     display: inline-block;
+     text-align: center;
+     margin: 10px;
+     cursor: pointer;
+     padding: 10px 10px 10px 10px;
+ }
+
+ .icon-button img {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+ }
+
+ .icon-button span {
+     display: block;
+     margin-top: 5px;
+ }
+
+ .a1{
+    padding-left: 5px;
+ }
+.b2{
+    padding-left:0px;
+}
+.c3{
+    padding-left: 2px;
+}

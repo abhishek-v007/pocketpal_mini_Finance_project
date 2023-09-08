@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>PocketPal MinFin - Help Center</title>
+
+        <!-- CSS FILES -->      
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/tooplate-mini-finance.css" rel="stylesheet">
+
+    </head>
+    
+<header class="navbar sticky-top flex-md-nowrap">
+    <div class="col-md-3 col-lg-3 me-0 px-3 fs-6">
+        <a class="navbar-brand" href="index.html">
+            <i class="bi-box"></i>
+            PocketPal MiniFin
+        </a>
+    </div>
+
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <form class="custom-form header-form ms-lg-3 ms-md-3 me-lg-auto me-md-auto order-2 order-lg-0 order-md-0" action="#"
+        method="get" role="form">
+        <input class="form-control" name="search" type="text" placeholder="Search" aria-label="Search">
+    </form>
+
+    <div class="navbar-nav me-lg-2">
+        <div class="nav-item text-nowrap d-flex align-items-center">
+            <div class="dropdown ps-3">
+                <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="bi-bell"></i>
+                    <span
+                        class="position-absolute start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+                        <span class="visually-hidden">New alerts</span>
+                    </span>
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-lg-end notifications-block-wrap bg-white shadow"
+                    aria-labelledby="navbarLightDropdownMenuLink">
+                    <small>Notifications</small>
+                    <div style="background-color:rgb(255, 255, 255);">
+                        <div style="margin: -15px;">
+                            <li class="notifications-block border-bottom pb-2 mb-2">
+                                <a class="dropdown-item d-flex  align-items-center" href="#">
+                                    <div class="notifications-icon-wrap bg-success">
+                                        <i class="notifications-icon bi-check-circle-fill" style="color: black;"></i>
+                                    </div>
+
+                                    <div>
+                                        <span style="color: rgb(0, 0, 0);">Your account has been created
+                                            successfuly.</span>
+
+                                        <p>12 days ago</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="notifications-block border-bottom pb-2 mb-2">
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="notifications-icon-wrap bg-info">
+                                        <i class="notifications-icon bi-folder" style="color: black;"></i>
+                                    </div>
+
+                                    <div>
+                                        <span style="color: rgb(0, 0, 0);">KYC Successfully done. Please complete the
+                                            further
+                                            steps.</span>
+
+                                        <p>10 days ago</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="notifications-block">
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="notifications-icon-wrap bg-danger">
+                                        <i class="notifications-icon bi-question-circle" style="color: black;"></i>
+                                    </div>
+
+                                    <div>
+                                        <span style="color: rgb(0, 0, 0);">Money transfer failed.</span>
+
+                                        <p>1 hour ago</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="dropdown ps-1">
+                <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="bi-three-dots-vertical"></i>
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-social bg-white shadow">
+                    <div class="container">
+                        <div style="margin: 0px 0px -13px 0px;">
+                            <div class="row" style="background-color:white;">
+                                <div class="col-lg-4 col-md-4 col-4">
+                                    <a class="dropdown-item text-center" href="#">
+                                        <img src="images/social/stocks.png" class="profile-image img-fluid" alt="">
+                                        <span class="d-block">Stocks</span>
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-4">
+                                    <a class="dropdown-item text-center" href="#">
+                                        <img src="images/social/fds.png" class="profile-image img-fluid" alt="">
+                                        <span class="d-block">FDs</span>
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-4">
+                                    <a class="dropdown-item text-center" href="#">
+                                        <img src="images/social/SIP.png" class="profile-image img-fluid" alt="">
+                                        <span class="d-block">SIPs</span>
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-4">
+                                    <a class="dropdown-item text-center" href="#">
+                                        <img src="images/social/gold bonds.png" class="profile-image img-fluid" alt="">
+                                        <span class="d-block">Gold Bonds</span>
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-4">
+                                    <a class="dropdown-item text-center" href="#">
+                                        <img src="images/social/securities.png" class="profile-image img-fluid" alt="">
+                                        <span class="d-block"> Securities</span>
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-4">
+                                    <a class="dropdown-item text-center" href="#">
+                                        <img src="images/social/AMM.png" class="profile-image img-fluid" alt="">
+                                        <span class="d-block">Many more</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown px-3">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="images/Untitled.jpg" class="profile-image img-fluid" alt="">
+                </a>
+                <ul class="dropdown-menu bg-white shadow">
+                    <div style="background-color: rgb(255, 255, 255);">
+                        <div style="margin: -24px 0px -16px 0px;">
+                            <li>
+                                <div class="dropdown-menu-profile-thumb d-flex" style="padding-top:15px;">
+                                    <img src="images/Untitled.jpg" class="profile-image img-fluid me-3" alt="">
+
+                                    <div class="d-flex flex-column">
+                                        <small>Kaleen Bhaiya</small>
+                                        <a href="#">akhanda@mirzapur.com</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="profile.html">
+                                    <i class="bi-person me-2"></i>
+                                    Account Details
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="setting.html">
+                                    <i class="bi-gear me-2"></i>
+                                    Settings
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="help-center.html">
+                                    <i class="bi-question-circle me-2"></i>
+                                    Help
+                                </a>
+                            </li>
+
+                            <li class="border-top mt-3 pt-2 mx-4" style="padding-bottom: 10px;">
+                                <a class="dropdown-item ms-0 me-0" href="logout_successfully.html">
+                                    <i class="bi-box-arrow-left me-2"></i>
+                                    Logout
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container-fluid">
+    <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block sidebar collapse">
+            <div class="position-sticky py-4 px-3 sidebar-sticky">
+                <ul class="nav flex-column h-100">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">
+                            <i class="bi-house-fill me-2"></i>
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="wallet.html">
+                            <i class="bi-wallet me-2"></i>
+                            My Wallet
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="profile.html">
+                            <i class="bi-person me-2"></i>
+                            Account Details
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="setting.html">
+                            <i class="bi-gear me-2"></i>
+                            Settings
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="help-center.html">
+                            <i class="bi-question-circle me-2"></i>
+                            Help Forum
+                        </a>
+                    </li>
+
+                    <li class="nav-item featured-box mt-lg-5 mt-4 mb-4">
+                        <img src="images/credit-card.png" class="img-fluid" style="width: 250px;" alt="">
+
+                        <a class="btn custom-btn" href="Upgrade_your-card.html">Upgrade</a>
+                    </li>
+
+                    <li class="nav-item border-top mt-auto pt-2">
+                        <a class="nav-link" href="logout_successfully.html">
+                            <i class="bi-box-arrow-left me-2"></i>
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+                <main class="main-wrapper col-md-9 ms-sm-auto py-4 col-lg-9 px-md-4 border-start">
+                    <div class="title-group mb-3">
+                        <h1 class="h2 mb-0">How can we help?</h1>
+                    </div>
+
+                    <div class="row my-4">
+                        <div class="col-lg-7 col-12">
+                            <div class="custom-block bg-white">
+                                <form class="custom-form search-form" action="#" method="post" role="form">
+                                    <div class="row">
+                                        <div class="col-lg-12 mb-2">
+                                            <h6>Search for the topics</h6>
+                                        </div>
+
+                                        <div class="col-lg-8 col-md-8 col-12">
+                                            <input class="form-control mb-lg-0 mb-md-0" name="search" type="text" placeholder="Search" aria-label="Search">
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-4 col-12">
+                                            <button type="submit" class="form-control">
+                                                Submit
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="custom-block custom-block-faq">
+                                <h5 class="mb-4">Frequently Asked Questions</h5>
+
+                                <strong class="d-block mb-2">1. What is PocketPal MiniFin?</strong>
+
+                                <p>PocketPal MiniFin is a user-friendly financial management tool designed to help you manage your personal finances
+                                effectively. It offers a range of features to track your income, expenses, savings, and investments.</p>
+                                
+                                <strong class="d-block mt-3 mb-2">2. How do I get started with PocketPal MiniFin?</strong>
+
+                                <p>To get started with PocketPal MiniFin, simply sign up for an account on our website or download our mobile app from your
+                                app store. Once you've created an account, you can start adding your financial information and setting up your budget.</p>
+
+                                <strong class="d-block mt-3 mb-2">3. Is PocketPal MiniFin free to use?</strong>
+
+                                <p>Yes, PocketPal MiniFin offers a free basic plan with essential financial management features. We also offer a premium
+                                subscription with advanced features and additional support options.</p>
+
+                                 <strong class="d-block mt-3 mb-2">4. Can I connect my bank accounts to PocketPal MiniFin?</strong>
+
+                                 <p>Yes, you can link your bank accounts and credit cards to PocketPal MiniFin to automatically track your transactions and
+                                account balances. We use secure encryption to protect your financial data.</p>
+<br>
+                                <strong class="d-block mb-2">5. How does PocketPal MiniFin help me budget my expenses?</strong>
+                                
+                                <p>PocketPal MiniFin allows you to set up a budget and categorize your expenses. It tracks your spending in real-time and
+                                provides insights into your spending habits, helping you stay on track and save money.</p>
+                                
+                                
+                                    
+                                    
+                                    
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-12">
+                            <div class="custom-block custom-block-contact">
+                                <h6 class="mb-4">Still can’t find what you looking for?</h6>
+
+                                <p>
+                                    <strong>Call us:</strong>
+                                    <a href="tel: 305-240-9671" class="ms-2">
+                                        (+91) 
+                                        XXX-XXX-0983
+                                    </a>
+                                </p>
+
+                                <a href="#" class="btn custom-btn custom-btn-bg-white mt-3">
+                                    Chat with us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="site-footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 col-12">
+                                    <p class="copyright-text"> Made in VS CODE & Hosted in Github.io
+                                        - Design: <a rel="sponsored" href="https://abhishek-tiwari-portfolio.netlify.app/" target="_blank">Abhishek
+                                            Tiwari</a></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </footer>
+                </main>
+
+            </div>
+        </div>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
